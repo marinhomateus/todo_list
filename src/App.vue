@@ -10,7 +10,7 @@
     <v-app-bar app>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
-      <v-toolbar-title>Application</v-toolbar-title>
+      <v-toolbar-title>Mali Cosméticos - Estoque</v-toolbar-title>
     </v-app-bar>
 
     <v-main>
@@ -23,15 +23,4 @@
   export default {
     data: () => ({ drawer: null }),
   }
-</script>
-
-<script>
-
-export default {
-  name: 'App',
-
-  data: () => ({
-    //
-  }),
-};
 </script>
