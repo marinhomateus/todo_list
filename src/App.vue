@@ -7,10 +7,10 @@
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="title">
-            Application
+            ToDo
           </v-list-item-title>
           <v-list-item-subtitle>
-            subtext
+            ToDo using VueJS
           </v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
@@ -44,7 +44,7 @@
     </v-app-bar>
 
     <v-main>
-      <!--  -->
+      <router-view></router-view>
     </v-main>
   </v-app>
 </template>
@@ -54,8 +54,7 @@
     data: () => ({ 
       drawer: null,
       items: [
-          { title: 'Dashboard', icon: 'mdi-view-dashboard' },
-          { title: 'Photos', icon: 'mdi-image' },
+          { title: 'ToDo', icon: 'mdi-view-dashboard' },
           { title: 'About', icon: 'mdi-help-box' },
         ],
         right: null,
