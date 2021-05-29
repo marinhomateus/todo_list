@@ -41,9 +41,8 @@
     <v-app-bar 
       app
       color="#fcb69f"
-      dark
       shrink-on-scroll
-      src="https://snappygoat.com/o/497c1ce5039b8b8f418ddb9f1e9b1aae36516e53/background-geometry-polygon-design-618226.png"
+      src="https://picsum.photos/1920/1080?random"
       scroll-target="#scrolling-techniques-2"
     >
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
