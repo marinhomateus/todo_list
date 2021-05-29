@@ -42,7 +42,7 @@
       app
       color="#fcb69f"
       shrink-on-scroll
-      src="https://picsum.photos/1920/1080?random"
+      src="https://i.picsum.photos/id/485/1920/1080.jpg?hmac=o22v7VwPC2dDWI5sS7-jQvMd9OdzCVwcmDdBGRRVZDU"
       scroll-target="#scrolling-techniques-2"
     >
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
