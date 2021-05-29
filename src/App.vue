@@ -6,7 +6,7 @@
     >
       <v-list-item>
         <v-list-item-content>
-          <v-list-item-title class="title">
+          <v-list-item-title class="title ">
             ToDo
           </v-list-item-title>
           <v-list-item-subtitle>
@@ -38,10 +38,17 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar app>
+    <v-app-bar 
+      app
+      color="#fcb69f"
+      dark
+      shrink-on-scroll
+      src="https://snappygoat.com/o/497c1ce5039b8b8f418ddb9f1e9b1aae36516e53/background-geometry-polygon-design-618226.png"
+      scroll-target="#scrolling-techniques-2"
+    >
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
-      <v-toolbar-title>TODO LIST</v-toolbar-title>
+      <v-toolbar-title class="font-weight-black">TODO LIST</v-toolbar-title>
     </v-app-bar>
 
     <v-main>
@@ -55,8 +62,8 @@
     data: () => ({ 
       drawer: null,
       items: [
-          { title: 'ToDo', icon: 'mdi-view-dashboard', to: '/' },
-          { title: 'About', icon: 'mdi-help-box', to: '/about' },
+          { title: 'ToDo', icon: 'mdi-clipboard-list', to: '/' },
+          { title: 'About', icon: 'mdi-information-variant', to: '/about' },
         ],
         right: null,
      }),
