@@ -1,10 +1,15 @@
 <template>
   <v-card class="mx-auto">
     <v-text-field
+      v-model="newTaskTitle"
+      @click:append="addTask"
+      @keyup.enter="addTask"
       outlined
-      label="Append"
+      label="Adicionar Tarefa"
       append-icon="mdi-plus"
       class="pa-3"
+      hide-details=""
+      clearable
     ></v-text-field>
     <v-list flat>
       <v-list-item-group v-model="settings" multiple>
@@ -43,26 +48,36 @@ export default {
   name: "Home",
   data() {
     return {
+      newTaskTitle: '',
       tasks: [
-        {
-          id: 1,
-          title: "Acordar",
-          done: false,
-        },
-        {
-          id: 2,
-          title: "Escovar os dentes",
-          done: false,
-        },
-        {
-          id: 3,
-          title: "Tomar banho",
-          done: false,
-        },
-      ],
+      //   {
+      //     id: 1,
+      //     title: "Acordar",
+      //     done: false,
+      //   },
+      //   {
+      //     id: 2,
+      //     title: "Escovar os dentes",
+      //     done: false,
+      //   },
+      //   {
+      //     id: 3,
+      //     title: "Tomar banho",
+      //     done: false,
+      //   },
+      ]
     };
   },
   methods: {
+    addTask(){
+      let newTask = {
+        id: Date.now(),
+        title: this.newTaskTitle,
+        done: false
+      }
+      this.tasks.push(newTask)
+      this.newTaskTitle = ''
+    },
     doneTask(id) {
       let task = this.tasks.filter((task) => task.id === id)[0];
       task.done = !task.done;
